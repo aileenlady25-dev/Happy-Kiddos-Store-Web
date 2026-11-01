@@ -1,6 +1,6 @@
 ---
 title: "Mamy Poko L42 Jumbo: Ukuran Pas Buat Bayi yang Mulai Aktif"
-date: 2026-11-01T15:00:00.000+07:00
+date: 2026-11-01T15:30:00.000+07:00
 thumbnail: /images/uploads/mamy-poko-l42.png
 description: Cari review Mamy Poko L42 Jumbo? Isi 42 pcs untuk bayi 9-14kg,
   model celana anti bocor dengan karet pinggang lembut. Cek kelebihan lengkapnya
