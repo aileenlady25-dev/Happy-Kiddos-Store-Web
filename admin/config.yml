@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads" # Folder tempat menyimpan gambar yang diunggah dari CMS
+public_folder: "/images/uploads"
+
+collections:
+  # Koleksi untuk Artikel / Blog
+  - name: "blog"
+    label: "Artikel / Blog"
+    folder: "artikel" # Folder tempat file artikel disimpan di server
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Judul Artikel", name: "title", widget: "string" }
+      - { label: "Tanggal Terbit", name: "date", widget: "datetime" }
+      - { label: "Gambar Utama", name: "thumbnail", widget: "image", required: false }
+      - { label: "Ringkasan Singkat (SEO Meta Description)", name: "description", widget: "text" }
+      - { label: "Isi Artikel", name: "body", widget: "markdown" }
+
+  # Koleksi untuk Halaman Promo
+  - name: "promo"
+    label: "Halaman Promo"
+    folder: "promo"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Judul Promo", name: "title", widget: "string" }
+      - { label: "Periode Promo", name: "period", widget: "string" }
+      - { label: "Gambar Banner Promo", name: "banner", widget: "image" }
+      - { label: "Deskripsi Promo", name: "body", widget: "markdown" }
+      - { label: "Link WhatsApp Order", name: "wa_link", widget: "string" }
